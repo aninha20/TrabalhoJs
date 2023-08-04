@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="uri.css">
+    <title>Trabalho web</title>
+</head>
+<body>
+    <nav class="navbar fixed-top" style="background-color: #A0C49D;">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#">
+            <img src="data:image/png;base64,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" alt="" width="50px" height="45px" style="border-radius: 15px;"class="d-inline-block"> Problemas do beecrowd resolvidos</a>
+        <ul class="nav justify-content-end">
+            <li class="nav-item">
+              <a class="nav-link" href="#CaraCoroa">Problema 1</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#inseto">Problema 2</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#Pepe">Problema 3</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#tabuada" >Problema 4</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#atrasadinhos">Problema 5</a>
+              </li>
+          </ul>
+        </div>
+    </nav>
+    <section class="page-section" id="problemas">
+      <h1>Resolução ativiades dos beecrowd por: Ana Caroline Pedrosa</h1>
+      <div class="container px-5 px-lg-1">
+        <div class="row justify-content-center">
+          <div class="col-lg-12">
+          <h2 class="text-center mt-0"  style="margin-top: 200px;">Problemas:</h2>
+          <br>
+          <hr class="divider" />
+          <br>
+          <div class="row gx-2 gx-lg-5">
+              <div class="col-lg-3 col-md-6">
+                  <div class="mt-5">
+                      <div class="mb-2"><i class="bi-gem fs-1 text-primary"></i></div>
+                      <h3 class="h4 mb-2" >Cara ou coroa</h3>
+                      <p class="text-muted mb-0">Problema de nível 2 e número <a href="https://www.beecrowd.com.br/judge/pt/problems/view/1329">1329</a></p>
+                  </div>
+              </div>
+              <div class="col-lg-2 col-md-6 ">
+                  <div class="mt-5">
+                      <div class="mb-2"><i class="bi-laptop fs-1 text-primary"></i></div>
+                      <h3 class="h4 mb-2">Inseto</h3>
+                      <p class="text-muted mb-0">O problema de nível 1 e número <a href="https://www.beecrowd.com.br/judge/pt/problems/view/2862">2862</a> </p>
+                  </div>
+              </div>
+              <div class="col-lg-2 col-md-6">
+                  <div class="mt-5">
+                      <div class="mb-2"><i class="bi-globe fs-1"></i></div>
+                      <h3 class="h4 mb-2">Quadrado e ao Cubo</h3>
+                      <p class="text-muted mb-0">O problema de nível 1 e número <a href="https://www.beecrowd.com.br/judge/pt/problems/view/1143">1143</a></p>
+                  </div>
+              </div>
+              <div class="col-lg-2 col-md-6">
+                  <div class="mt-5">
+                      <div class="mb-2"><i class="bi-heart fs-1 text-primary"></i></div>
+                      <h3 class="h4 mb-2">Tabuada</h3>
+                      <p class="text-muted mb-0">O problema de nível 1 e número <a href="https://www.beecrowd.com.br/judge/pt/problems/view/1078">1078</a></p>
+                  </div>
+              </div>
+              <div class="col-lg-2 col-md-6">
+                <div class="mt-5">
+                    <div class="mb-2"><i class="bi-heart fs-1 text-primary"></i></div>
+                    <h3 class="h4 mb-2">Atrasadinhos</h3>
+                    <p class="text-muted mb-0">Problema de nível 2 e número<a href="https://www.beecrowd.com.br/judge/pt/problems/view/3117">3117</a></p>
+                </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      </div>
+  </section>
+  <div class="problemas">
+    <!--primeiro: -->
+    <div class="primeiro" id="#CaraCoroa">
+      <br>
+      <h2>Contagem de vitórias</h2>
+      <br>
+      <p>Esse programinha consiste em calcular o número de vezes que maria e joão ganharam em cada partida de cara ou coroa. 
+        Depois de realizar o cálculo ele apresenta o placar referente a cada partida.</p>
+      <form id="formularioCaraCoroa">
+        <label for="inQuantidade">Quantidade: </label>
+        <input type="number" id="inQuantidade">
+        <br>
+        <br>
+        <button onclick="CaraCoroa.calcularVitorias()"> Calcular </button>
+      </form>
+      <div id="resultado"></div>
+    
+    </div>
+
+    <!--segundo: -->
+    <div class="segundo" id="#inseto">
+      <br>
+      <h2>Você tem mais de 8000 de energia?</h2>
+      <br>
+      <p>Este programa consistem em captar o nível de energia que um ser possui, e  de acordo com isso afirmar se esse é um inseto ou se tem mais de 8000 de energia.</p>
+      <form>
+        <label for="numeros">Insira o seu nível de energia: </label><br>
+        <input type="text" id="numeros" name="numeros" required>
+        <br>
+        <br>
+        <button type="button" onclick="verificarInseto()"> Verificar </button>
+      </form>
+      <div id="resultado02"></div>
+    
+    </div>
+
+    <!--terceiro: -->
+    <div class="terceiro">
+      <br>
+      <h2>Ao cubo e ao quadrado</h2>
+      <br>
+      <p>Esse programa consiste em calcular o valor de um número elevado ao cubo e ao quadrado</p>
+        <form>
+          <label for="n">Insira um número: </label><br>
+          <input type="number" id="n" name="n" required><br>
+          <br>
+          <button type="button" onclick="calcularPotencias()">Calcular</button>
+        </form>
+        <div id="resultado03"></div>
+    
+    </div>
+    <!--quarto: -->
+    <div class="quarto">
+      <br>
+      <h2>Você precisa da tabuada de qual número?</h2>
+      <br>
+      <p>Este programa irá mostrar a tabuada do número que você digitar</p>
+        <form id="formTabuada">
+          <label for="inNumero">Digite um número:</label>
+          <input type="number" id="inNumero" name="numero" />
+          <br>
+          <br>
+          <button type="submit">Calcular</button>
+        </form>
+      
+        <div id="resultado04"></div>
+        
+    </div>
+
+    <!--quinto: -->
+    <div class="quinto">
+      <br>
+      <h2>Hoje tem aula?</h2>
+      <br>
+      <p>Este programa tem como função receber a quantidade total de alunos, para que uma aula ocorra, e quantidade mínima que deve faltar. Se por acaso faltar mais alunos do que o especificado, não haverá aula. </p>
+      <form id="formuAtrasadinhos">
+      <label>Insira a quantidade de alunos: </label>
+      <input type="number" id="inQuant">
+      <br>
+      <br>
+      <label>Quantos alunos podem faltar? </label>
+      <input type="number" id="inQuantmin">
+      <br>
+      <br>
+    <button onclick="Aulas()"> Verificar </button>
+      </form>
+    
+      <div id="resultado05"></div>
+
+    </div>
+  </div>
+    <script src="atrasadinhos.js"></script>
+    <script src="cubo.js"></script>
+    <script src="inseto.js"></script>
+    <script src="tabuada.js"></script>
+    <script src="CaraCoroa.js"></script>
+</body>
+</html>

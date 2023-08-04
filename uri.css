@@ -1,0 +1,51 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@200&family=Roboto+Slab&display=swap');
+
+body{
+    background-color: #E1ECC8;
+    font-family: 'Raleway', sans-serif;
+    font-family: 'Roboto Slab', serif;
+    
+}
+.nav-link{
+    color: #00454A;
+}
+section{
+    padding-top: 100px;
+    text-align: center;
+}
+h1 h2 h3 p img{
+    color: #00454A;
+}
+p{
+    font-size: 20px;
+}
+a{
+    color: #00454A;
+}
+.problemas {
+    text-align: center;
+    padding: 70px;
+}
+
+
+button{
+    border-radius: 10px;
+    border-color: #00454A;
+    padding:7px;
+    border: 2px solid #577D86;
+    outline: none;
+}
+input{
+    color: #00454A;
+    border-radius: 10px;
+    padding: 5px;
+    border: 2px solid #577D86;
+}
+
+.result{
+    font-size: 20px;
+    padding-top: 40px;
+}
+pre{
+    font-size: 20px;
+}
